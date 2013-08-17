@@ -4,6 +4,9 @@ Yummly-Java-Wrapper
 A Java wrapper for the Yummly api.
 Detailed documentation can be found at the [Yummly developer site](https://developer.yummly.com/documentation/).
 
+## Requirements
+This code requires all three [Jackson modules](https://github.com/FasterXML/jackson) for JSON-parsing; "Streaming", "Annotations", and "Databind".
+
 ## Usage
 All models represents the objects documented at the [Yummly developer site](https://developer.yummly.com/documentation/).
 This example shows how to search for spicy salmon recipes. It prints a short description of the returned recipes.
