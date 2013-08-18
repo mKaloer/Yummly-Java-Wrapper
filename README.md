@@ -11,7 +11,7 @@ This code requires all three [Jackson modules](https://github.com/FasterXML/jack
 All models represents the objects documented at the [Yummly developer site](https://developer.yummly.com/documentation/).
 This example shows how to search for spicy salmon recipes. It prints a short description of the returned recipes.
 
-    Yummly y = new Yummly("391aa893", "0c6057e1ecc308f208994a40995f8a3a");
+    Yummly y = new Yummly(APP_ID, APP_KEY);
     SearchResult result;
     try {
         Flavors minFlavors = new Flavors();
@@ -27,7 +27,7 @@ This example shows how to search for spicy salmon recipes. It prints a short des
     
 The recipes returned are sparse and do not contain all information. To request a specific recipe containing all information available, use the 'Yummly.GetRecipe()' method with the id of the recipe. This example will request information about the first recipe of the search result set.
 
-    Yummly y = new Yummly("391aa893", "0c6057e1ecc308f208994a40995f8a3a");
+    Yummly y = new Yummly(APP_ID, APP_KEY);
     SearchResult result;
     try {
         Flavors minFlavors = new Flavors();
