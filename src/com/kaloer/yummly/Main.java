@@ -12,7 +12,7 @@ import com.kaloer.yummly.models.SearchResult;
 public class Main {
 
 	public static void main(String[] args) {
-		Yummly y = new Yummly("391aa893", "0c6057e1ecc308f208994a40995f8a3a");
+		Yummly y = new Yummly("YOUR_APP_ID", "YOUR_APP_KEY");
 		SearchResult result;
 		try {
 			Flavors minFlavors = new Flavors();
